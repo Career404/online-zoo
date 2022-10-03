@@ -1,5 +1,146 @@
 * {
+  margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  transition: 1s linear;
   /* Temporary - control the layout! */
-  outline: 1px solid red !important;
+}
+* a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-color: black;
+  height: 80px;
+  /*This will be needed later
+      position: relative;
+  z-index: 3;
+  */
+}
+header .head-wrapper {
+  max-width: 1218px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .head-wrapper h1 {
+  position: relative;
+  height: 52px;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 3.55px 4.75px;
+  margin-left: 30px;
+  flex: 0 0 82px;
+  line-height: 16px;
+  text-align: center;
+}
+header .head-wrapper h1 img {
+  position: absolute;
+  left: 6px;
+  top: 22px;
+}
+header .head-wrapper h1 a {
+  line-height: 23px;
+  font-weight: 400;
+  font-size: 19px;
+}
+header .head-wrapper ul {
+  flex: 1 1 auto;
+  list-style: none;
+  display: flex;
+  gap: 6.15%;
+}
+@media (max-width: 1010px) {
+  header .head-wrapper ul {
+    gap: 6.8%;
+  }
+}
+header .head-wrapper ul li:first-of-type {
+  margin-left: 24px;
+}
+header .head-wrapper .designed {
+  margin-right: 29px;
+}
+header .head-wrapper .burger {
+  display: none;
+}
+header .head-wrapper span {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+header .head-wrapper a {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+header .head-wrapper a:active {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+@media (max-width: 640px) {
+  header {
+    height: 34px;
+  }
+  header .head-wrapper h1 {
+    border: none;
+    width: 47px;
+    height: 29px;
+    margin: 0px 0.5% 25px;
+  }
+}
+@media (max-width: 640px) and (max-width: 320px) {
+  header .head-wrapper h1 {
+    transform: translateX(-10px);
+  }
+}
+@media (max-width: 640px) {
+  header .head-wrapper h1 a {
+    font-size: 12.2899px;
+    line-height: 30%;
+  }
+}
+@media (max-width: 640px) {
+  header .head-wrapper h1 img {
+    transform: scale(0.7);
+    left: 20px;
+    bottom: 4px;
+  }
+}
+@media (max-width: 640px) {
+  header .head-wrapper ul {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  header .head-wrapper .designed {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  header .head-wrapper .burger {
+    display: flex;
+    height: 22px;
+    margin: 12px 1%;
+    flex-flow: column nowrap;
+  }
+}
+@media (max-width: 640px) {
+  header .head-wrapper .line {
+    margin: 2px 0px;
+    width: 18px;
+    height: 2px;
+    background-color: white;
+  }
 }/*# sourceMappingURL=styles.css.map */
