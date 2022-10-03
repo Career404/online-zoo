@@ -1,5 +1,17 @@
-#MASTER
-*
-*/
+#CARDS
+
+#utility
+*.map
+
+#folders
+/result/
+/modules/1-0-header/
+/modules/1-2-donate/
+/modules/2-backstage/
+/modules/4-friend/
+/modules/5-testimonials/
+/modules/6-0-footer/
+
+# exclude
 !.gitignore
 !README.md
